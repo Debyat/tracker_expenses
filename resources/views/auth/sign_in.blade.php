@@ -7,6 +7,11 @@
             </div>
         </div>
         <div class="container">
+            @if($error->has('msg'))
+                <div class="error">
+                    {{ $error->first('msg') }}
+                </div>
+            @endif
             <div class="title">
                 <h3>Sign In</h3>
             </div>
@@ -17,10 +22,20 @@
                         <div class="col">
                             <label for="">Email</label>
                             <input type="email" name="email">
+                            @if($error->has('email'))
+                                <span class="error_msg">
+                                    {{ $error->first('email') }}
+                                </span>
+                            @endif
                         </div>
                         <div class="col">
                             <label for="">Password</label>
                             <input type="password" name="password">
+                            @if($error->has('password'))
+                                <span class="error_msg">
+                                    {{ $error->first('password') }}
+                                </span>
+                            @endif
                         </div>
                     </div>
                 </div>
