@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    font-family: system-ui;
+}
+.wrapper{
+    position: relative;
+}
+.wrapper .header{
+    box-shadow: 1px 2px 6px dimgrey;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .header .nav{
+    background: black;
+    padding: 4px;
+    width: 35px;
+    margin: 5px;
+}
+.wrapper .header .right{
+    position: relative;
+    display: inline-block;
+}
+.wrapper .header .right p{
+    font-weight: bold;
+}
+.wrapper .header .right:hover .dropdown{
+    display: grid;
+}
+.wrapper .header .right .dropdown{
+    position: absolute;
+    display: none;
+    box-shadow: 2px 4px 8px dimgrey;
+    padding: 5px 20px 20px;
+    z-index: 1;
+    background: #ffff;
+    right: 4px;
+    top: 40px;
+}
+.wrapper .header .right .dropdown a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.wrapper .body{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.wrapper .body .row{
+    margin-top: 50px;
+}
+.wrapper .body .row .col .card{
+    box-shadow: 2px 2px 5px dimgrey;
+    background: #D9D9D9;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.wrapper .body .row .col h2{
+    text-align: center;
+}
+.wrapper .body .row .col input{
+    width: 75%;
+    padding: 10px;
+    border: none;
+    background: #D9D9D9;
+    border-radius: 5px;
+}
+.wrapper .body .row .col button{
+    width: 22%;
+    padding: 12px;
+    border: none;
+    color: #ffff;
+    border-radius: 5px;
+    background: #409DF3;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.border{
+    border-radius: 10px;
+    height: 50px;
+}
+.sidebar{
+    position: fixed;
+    z-index: 999999;
+    color: #ffff;
+    background: #000000c4;
+    text-decoration: none;
+    height: 100vh;
+}
