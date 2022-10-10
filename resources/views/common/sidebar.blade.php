@@ -1,8 +1,11 @@
-<div class="sidebar">
+<div id="sidebar" class="hidden">
+    <div class="close" onclick="close_sidebar()">
+        X
+    </div>
     <div class="logo">
         <div class="circle-logo">
         </div>
-         <span>Tracking Expenses</span>
+         <p>Tracking Expenses</p>
     </div>
     <div class="labels">
         <ul>
