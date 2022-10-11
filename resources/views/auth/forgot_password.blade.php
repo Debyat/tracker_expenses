@@ -1,11 +1,7 @@
 @extends('auth.index')
-@section('title','Sign In')
+@section('title','Forgot Password')
 @section('content')
     <div class="content">
-        <div class="logo-container">
-            <div class="logo">
-            </div>
-        </div>
         <div class="container">
             @if($errors->has('msg'))
                 <div class="error">
@@ -13,9 +9,9 @@
                 </div>
             @endif
             <div class="title">
-                <h3>Sign In</h3>
+                <h3>Forgot Password</h3>
             </div>
-            <form action="{{ route('sign_in.store') }}" method="post">
+            <form action="{{ route('forgot.check') }}" method="post">
                 @csrf
                 <div class="body">
                     <div class="row">
@@ -24,16 +20,7 @@
                             <input type="email" name="email" value="{{ old('email') }}" class="{{ $errors->has('email') ? 'input-error' : '' }}">
                             @if($errors->has('email'))
                                 <span class="error_msg">
-                                    *{{ $errors->first('email') }}
-                                </span>
-                            @endif
-                        </div>
-                        <div class="col">
-                            <label for="">Password</label>
-                            <input type="password" name="password" class="{{ $errors->has('password') ? 'input-error' : '' }}">
-                            @if($errors->has('password'))
-                                <span class="error_msg">
-                                    *{{ $errors->first('password') }}
+                                    {{ $errors->first('email') }}
                                 </span>
                             @endif
                         </div>
@@ -41,11 +28,10 @@
                 </div>
                 <div class="footer">
                     <div class="button">
-                        <button type="submit">Sign In</button>
+                        <button type="submit">Submit</button>
                     </div>
                     <div class="label">
-                        <a href="{{ route('forgot.password') }}" class="left">Forgot Password</a>
-                        <a href="{{ route('sign_up') }}" class="right">Sign Up</a>
+                        <a href="{{ route('sign_in') }}" class="left">Back</a>
                     </div>
                 </div>
             </form>

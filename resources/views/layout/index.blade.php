@@ -11,24 +11,6 @@
 <body>
     @include('common.sidebar')
     <div class="wrapper">
-        <div class="sidebar_header">
-            <div class="row">
-                <div class="col">
-                    <div class="circle"></div>
-                </div>
-                <div class="col">
-                    Tracking Expenses
-                </div>
-            </div>
-            <div class="lists">
-                <ul>
-                    <li class="active"><a href="#">Dashboard</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                </ul>
-            </div>
-        </div>
         @include('common.nav')
         @yield('content')
     </div>

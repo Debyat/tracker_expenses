@@ -61,3 +61,14 @@ body{
     float: right;
     color: #725DF3;
 }
+.error_msg{
+    color: #e12006;
+}
+.input-error{
+    border: 1px solid red !important;
+}
+.error{
+    padding: 20px;
+    background: #ff000024;
+    color: red;
+}

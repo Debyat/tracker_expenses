@@ -23,11 +23,32 @@ class UserRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'first_name' => 'required|string|min:2',
-            'last_name'  => 'required|string|min:2',
-            'email'      => 'required|unique:users|email',
-            'password'   => 'required',
-        ];
+        $req_route = \Request::route();
+        switch ($req_route->action['as']) {
+            case 'sign_up.store':
+                return [
+                    'first_name'            => 'required|string|min:2',
+                    'last_name'             => 'required|string|min:2',
+                    'email'                 => 'required|unique:users|email',
+                    'password'              => 'required|confirmed',
+                    'password_confirmation' => 'required'
+                ];
+                break;
+            case 'sign_in.store':
+                return [
+                    'email'                 => 'required|email',
+                    'password'              => 'required',
+                ];
+                break;
+            case 'forgot.check':
+                return [
+                    'email'                 => 'required'
+                ];
+            case 'create.password.store':
+                return [
+                    'password'              => 'required|confirmed',
+                    'password_confirmation' => 'required'
+                ];
+        }
     }
 }

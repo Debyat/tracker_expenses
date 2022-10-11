@@ -1,3 +1,4 @@
+{{-- Sidebar on Mobile --}}
 <div id="sidebar" class="hidden">
     <div class="close" onclick="close_sidebar()">
         X
