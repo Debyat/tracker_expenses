@@ -10,8 +10,8 @@
     </div>
     <div class="labels">
         <ul>
-            <li class="active"><a href="#">Dashboard</a></li>
-            <li><a href="#">Tracking Expenses</a></li>
+            <li class="{{ request()->routeIs('home') ? 'active' : '' }}"><a href="{{ route('home') }}">Dashboard</a></li>
+            <li class="{{ request()->routeIs('expenses') ? 'active' : '' }}"><a href="{{ route('expenses') }}">Expenses</a></li>
             <li><a href="#">Tracking Expenses</a></li>
             <li><a href="#">Tracking Expenses</a></li>
             <li><a href="#">Tracking Expenses</a></li>

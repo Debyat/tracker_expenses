@@ -10,8 +10,8 @@
     </div>
     <div class="lists">
         <ul>
-            <li class="active"><a href="#">Dashboard</a></li>
-            <li><a href="#">Dashboard</a></li>
+            <li class="{{ request()->routeIs('home') ? 'active' : '' }}"><a href="{{ route('home') }}">Dashboard</a></li>
+            <li class="{{ request()->routeIs('expenses') ? 'active' : '' }}"><a href="{{ route('expenses') }}">Expenses</a></li>
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Dashboard</a></li>
         </ul>
@@ -27,12 +27,12 @@
     <div class="right">
         <p>Welcome, John Doe <i class="arrow down"></i></p>
         <div class="dropdown">
-            <a href="#">Settings</a>
-            <a href="#">Logout</a>
+            <a href="#">Account</a>
+            <a href="{{ route('logout') }}">Logout</a>
         </div>
     </div>
     <div class="last">
-        <a class="top" href="">Settings</a>
+        <a class="top" href="">Account</a>
         <a class="top" href="{{ route('logout') }}">Logout</a>
     </div>
 </div>

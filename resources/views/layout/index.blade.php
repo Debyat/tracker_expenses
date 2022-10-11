@@ -8,13 +8,13 @@
     <title>Tracking Expenses || @yield('title')</title>
     @stack('css')
 </head>
-<body>
+<body id="body">
     @include('common.sidebar')
     <div class="wrapper">
         @include('common.nav')
         @yield('content')
     </div>
     @stack('js')
-    <script src="{{ asset('js/pages/sidenav.js') }}"></script>
+    <script src="{{ asset('js/common.js') }}"></script>
 </body>
 </html>

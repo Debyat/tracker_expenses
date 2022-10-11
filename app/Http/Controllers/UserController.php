@@ -133,7 +133,7 @@ class UserController extends Controller
         $user->update([
             'password' => Hash::make($params['password'])
         ]);
-        $this->logout();
+        Auth::logout();
 
         return redirect()->route('sign_in');
     }
