@@ -27,4 +27,9 @@ class ExpensesController extends Controller
     {
         return view('pages.expenses');
     }
+
+    public function budget()
+    {
+        return view('pages.budget');
+    }
 }

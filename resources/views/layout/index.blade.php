@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/pages/common.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/pages/mobile.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages/modal.css') }}">
     <title>Tracking Expenses || @yield('title')</title>
     @stack('css')

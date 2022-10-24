@@ -47,6 +47,6 @@
                 </div>
             </div>
         </div>
-        @include('pages.template_transactions')
+        @include('pages.parts.template_transactions')
     </div>
 @endsection

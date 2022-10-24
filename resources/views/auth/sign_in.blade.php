@@ -8,8 +8,13 @@
         </div>
         <div class="container">
             @if($errors->has('msg'))
-                <div class="error">
+                <div class="error msg-box">
                     {{ $errors->first('msg') }}
+                </div>
+            @endif
+            @if(session('success'))
+                <div class="success msg-box">
+                    {{ session('success') }}
                 </div>
             @endif
             <div class="title">

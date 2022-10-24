@@ -78,7 +78,7 @@ class UserController extends Controller
             'password'   => Hash::make($request->password)
         ]);
 
-        return redirect()->route('sign_in');
+        return redirect()->route('sign_in')->withSuccess('Successfully created an account.');
     }
 
     /**

@@ -1,0 +1,124 @@
+@media only screen and (min-width:768px) {
+    .wrapper .body .row.dashboard{
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper .body .row.dashboard .col{
+        width: 100%;
+    }
+    .wrapper .body .row .col.pc{
+        margin-right: 25px;
+    }
+    .wrapper .body .row.transaction{
+        display: flex;
+        justify-content: space-between;
+    }
+    .wrapper .body .row.transaction .col{
+        align-self: center;
+        width: 50%;
+    }
+    .wrapper .body .row .col h2 {
+        text-align: start;
+    }
+    .wrapper .body, .wrapper .header .right{
+        margin-left: 23%;
+    }
+    .wrapper .header .left{
+        display: none;
+    }
+    .sidebar_header{
+        width: 18%;
+        padding: 25px;
+        float: left;
+        background: red;
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        background: #ffff;
+        box-shadow: 0px 0px 2px dimgrey;
+    }
+    .sidebar_header .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidebar_header .row .col .circle{
+        width: 80px;
+        height: 80px;
+        background: #D9D9D9;
+        border-radius: 100%;
+        margin-right: 20px;
+    }
+    .sidebar_header .row .col:nth-of-type(2n){
+        width: 100%;
+        align-self: center;
+        font-weight: 700;
+    }
+    .last{
+        align-self: center;
+        font-weight: bold;
+    }
+    .last .top{
+        color: black;
+        margin-right: 10px;
+    }
+    .arrow.down{
+        display: none;
+    }
+    .lists{
+        margin-top: 80px;
+    }
+    .lists ul li a{
+        color: #0000006e;
+    }
+    .lists ul li.active a{
+        color: #fff;
+    }
+    .lists ul li.active{
+        padding: 16px 50px;
+        border-radius: 20px;
+        box-shadow: 1px 2px 5px dimgrey;
+    }
+}
+
+@media only screen and (max-width:1070px) {
+    .last{
+        display: none;
+    }
+    .wrapper .header .left{
+        display: block;
+    }
+    .sidebar_header{
+        display: none;
+    }
+    .wrapper .body{
+        margin-left: 10px;
+    }
+    .wrapper .header .right:hover .dropdown{
+        display: grid;
+    }
+    .arrow.down{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .wrapper .body .row.dashboard{
+        display: block;
+        justify-content: unset;
+    }
+    .wrapper .body .row .col.pc{
+        margin-right: 0px;
+    }
+    .wrapper .body .row.history{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    #budget .budget-types .row .col button{
+        width: 6.5rem;
+    }
+    #budget .budget-types .row .col.add-btn {
+        margin-left: 15px;
+    }
+}

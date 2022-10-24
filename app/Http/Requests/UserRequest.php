@@ -23,8 +23,8 @@ class UserRequest extends FormRequest
      */
     public function rules()
     {
-        $req_route = \Request::route();
-        switch ($req_route->action['as']) {
+        $req = \Request::route();
+        switch ($req->action['as']) {
             case 'sign_up.store':
                 return [
                     'first_name'            => 'required|string|min:2',

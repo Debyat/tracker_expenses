@@ -27,7 +27,7 @@
     }
 </style>
 @section('content')
-    @include('pages.modal')
+    @include('pages.parts.modal')
     <div class="body">
         <div class="row">
             <div class="col">
@@ -143,6 +143,6 @@
             </table>
         </div>
         {{-- Transactions --}}
-        @include('pages.template_transactions')
+        @include('pages.parts.template_transactions')
     </div>
 @endsection
