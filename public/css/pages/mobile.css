@@ -122,3 +122,17 @@
         margin-left: 15px;
     }
 }
+
+@media only screen and (max-width:768px) {
+    #budget .row.new-budget{
+        display: block;
+    }
+    #budget .row.budget-search{
+        display: block;
+    }
+    #budget .row.budget-search .col.search{
+        width: unset;
+        margin-top: 20px;
+
+    }
+}

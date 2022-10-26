@@ -160,9 +160,7 @@ a{
     margin-top: 30px;
     margin-bottom: 50px;
 }
-#budget .budget-search .col.search{
-    margin-top: 20px;
-}
+
 #budget .budget-search .col.search input{
     padding: 15px;
     box-shadow: 1px 2px 4px dimgrey;
@@ -199,4 +197,29 @@ a{
     height: 155px;
     margin-bottom: 75px;
     box-shadow: 1px 2px 4px dimgrey;
+}
+#budget .row.new-budget{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+}
+#budget .new_budget{
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+#budget .row.budget-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#budget .row.budget-search .col.search{
+    width: 60%;
+}
+#budget .no-data-msg{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    align-items: center;
+    color: #10101066;
+    margin-bottom: 200px;
 }
