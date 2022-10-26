@@ -4,7 +4,7 @@
         <h2>Latest Transactions</h2>
     </div>
     <div class="col">
-        <input type="text" name="" id="">
+        <input type="text" name="" id="" placeholder="Transactions...">
         <button>Search</button>
     </div>
 </div>

@@ -77,6 +77,7 @@ body{
     color: #ffff;
     border-radius: 5px;
     background: #409DF3;
+    cursor: pointer;
 }
 .arrow {
     border: solid black;
@@ -140,7 +141,7 @@ a{
 #sidebar .labels ul li, .lists ul li{
     padding: 10px 25px;
     border-radius: 10px;
-    width: 100px;
+    width: 65%;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
@@ -206,6 +207,7 @@ a{
 #budget .new_budget{
     padding-left: 60px !important;
     padding-right: 60px !important;
+    cursor: pointer;
 }
 #budget .row.budget-search{
     display: flex;

@@ -59,7 +59,7 @@
                 </div>
                 <div class="footer">
                     <div class="button">
-                        <button type="submit">Sign In</button>
+                        <button type="submit">Sign Up</button>
                     </div>
                     <div class="label">
                         <a href="{{ route('sign_in') }}" class="right">Sign In</a>

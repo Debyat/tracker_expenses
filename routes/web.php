@@ -31,6 +31,7 @@ Route::middleware('user')->group(function () {
     Route::get('/home', [ExpensesController::class, 'home'])->name('home');
     Route::get('/expenses', [ExpensesController::class, 'expenses'])->name('expenses');
     Route::get('/budget', [ExpensesController::class, 'budget'])->name('budget');
+    Route::get('/history', [ExpensesController::class, 'history'])->name('history');
 
     // Logout
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');

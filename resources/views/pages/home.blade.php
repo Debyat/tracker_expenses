@@ -47,6 +47,8 @@
                 </div>
             </div>
         </div>
-        @include('pages.parts.template_transactions')
+        @include('pages.parts.template_transactions',[
+            'transactions' => '[]'
+        ])
     </div>
 @endsection

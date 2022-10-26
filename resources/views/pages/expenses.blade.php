@@ -27,7 +27,9 @@
     }
 </style>
 @section('content')
-    @include('pages.parts.modal')
+    @include('pages.parts.modal', [
+        'action_url' => 'route()'
+    ])
     <div class="body">
         <div class="row">
             <div class="col">
@@ -143,6 +145,8 @@
             </table>
         </div>
         {{-- Transactions --}}
-        @include('pages.parts.template_transactions')
+        @include('pages.parts.template_transactions', [
+            'transactions' => '[]'
+        ])
     </div>
 @endsection

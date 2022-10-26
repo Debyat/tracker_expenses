@@ -32,4 +32,10 @@ class ExpensesController extends Controller
     {
         return view('pages.budget');
     }
+
+    public function history()
+    {
+        return view('pages.history');
+    }
+
 }
