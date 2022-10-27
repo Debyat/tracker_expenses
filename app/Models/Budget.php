@@ -9,8 +9,6 @@ class Budget extends Model
 {
     use HasFactory;
 
-    protected $table = 'budgets';
-
     protected $fillable = [
         'basic_salary',
         'extra',

@@ -9,8 +9,6 @@ class BudgetSubType extends Model
 {
     use HasFactory;
 
-    protected $table = 'budget_sub_types';
-
     protected $fillable = [
         'name',
         'max_amount'

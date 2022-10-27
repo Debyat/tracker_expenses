@@ -21,22 +21,21 @@
         text-align: start;
     }
     .wrapper .body, .wrapper .header .right{
-        margin-left: 23%;
+        margin-left: 20%;
         margin-right: 30px;
     }
     .wrapper .header .left{
         display: none;
     }
     .sidebar_header{
-        width: 18%;
+        width: 15%;
         padding: 25px;
         float: left;
-        background: red;
         height: 100%;
         position: fixed;
         z-index: 999;
-        background: #ffff;
-        box-shadow: 0px 0px 2px dimgrey;
+        background: #99C6E7;
+        box-shadow: 0px 8px 11px dimgrey;
     }
     .sidebar_header .row{
         display: flex;
@@ -69,13 +68,13 @@
         margin-top: 80px;
     }
     .lists ul li a{
-        color: #0000006e;
+        color: #000000;
     }
     .lists ul li.active a{
         color: #fff;
     }
     .lists ul li.active{
-        padding: 16px 50px;
+        padding: 16px 35px;
         border-radius: 20px;
         box-shadow: 1px 2px 5px dimgrey;
     }
@@ -93,6 +92,7 @@
     }
     .wrapper .body{
         margin-left: 10px;
+        margin-right: 10px;
     }
     .wrapper .header .right:hover .dropdown{
         display: grid;

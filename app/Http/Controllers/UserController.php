@@ -34,6 +34,7 @@ class UserController extends Controller
 
             return redirect()->route('home');
         }
+
         return redirect()->back()->withErrors(['msg' => 'The provided credentials do not match our records.']);
     }
 
@@ -101,9 +102,11 @@ class UserController extends Controller
     public function check_user(UserRequest $request)
     {
         $user = User::where('email', $request->email)->first();
+
         if (!$user) {
             return redirect()->back()->withErrors(['msg' => 'The provided email do not match our records.']);
         }
+
         Auth::login($user);
 
         return redirect()->route('create.password');
@@ -130,9 +133,11 @@ class UserController extends Controller
     {
         $user = Auth::user();
         $params = $request->all();
+
         $user->update([
             'password' => Hash::make($params['password'])
         ]);
+
         Auth::logout();
 
         return redirect()->route('sign_in');

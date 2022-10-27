@@ -9,8 +9,6 @@ class BudgetType extends Model
 {
     use HasFactory;
 
-    protected $table = 'budget_types';
-
     protected $fillable = [
         'name',
         'percentage',

@@ -9,8 +9,6 @@ class BudgetDetails extends Model
 {
     use HasFactory;
 
-    protected $table = 'budget_details';
-
     protected $fillable = [
         'percentage',
         'amount',

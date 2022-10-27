@@ -1,5 +1,5 @@
 @extends('layout.index')
-@section('title', 'Home')
+@section('title', 'History')
 <style>
 </style>
 @section('content')

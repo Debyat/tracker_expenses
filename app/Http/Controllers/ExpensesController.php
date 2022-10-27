@@ -28,11 +28,23 @@ class ExpensesController extends Controller
         return view('pages.expenses');
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function budget()
     {
         return view('pages.budget');
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function history()
     {
         return view('pages.history');
