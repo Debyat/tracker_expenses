@@ -72,11 +72,12 @@ class UserController extends Controller
      */
     public function store(UserRequest $request)
     {
+        $params = $request->validated();
         User::create([
-            'first_name' => $request->first_name,
-            'last_name'  => $request->last_name,
-            'email'      => $request->email,
-            'password'   => Hash::make($request->password)
+            'first_name' => $params['first_name'],
+            'last_name'  => $params['last_name'],
+            'email'      => $params['email'],
+            'password'   => Hash::make($params['password'])
         ]);
 
         return redirect()->route('sign_in')->withSuccess('Successfully created an account.');

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ExpensesController extends Controller
+class BudgetController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class ExpensesController extends Controller
      */
     public function index()
     {
-        return view('pages.expenses');
+        return view('pages.budget');
     }
 
     /**

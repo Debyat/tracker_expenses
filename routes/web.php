@@ -1,8 +1,12 @@
 <?php
 
+use App\Http\Controllers\BudgetController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ExpensesController;
+use App\Http\Controllers\HistoryController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,10 +32,10 @@ Route::middleware('user')->group(function () {
     Route::post('/new-password', [UserController::class, 'new_password'])->name('create.password.store');
 
     // Dasboard
-    Route::get('/home', [ExpensesController::class, 'home'])->name('home');
-    Route::get('/expenses', [ExpensesController::class, 'expenses'])->name('expenses');
-    Route::get('/budget', [ExpensesController::class, 'budget'])->name('budget');
-    Route::get('/history', [ExpensesController::class, 'history'])->name('history');
+    Route::resource('home', DashboardController::class);
+    Route::resource('expenses', ExpensesController::class);
+    Route::resource('budgets', BudgetController::class);
+    Route::resource('history', HistoryController::class);
 
     // Logout
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
